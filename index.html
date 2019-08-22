@@ -3,7 +3,7 @@
 <html>
 	<head>
 		
-		<!-- Website Title & Description for Search Engine purposes -->
+		
 		<title>My second website</title>
 		<meta charset="utf-8"/>
 		<meta name="description" content="Pets care taking centre">
@@ -12,6 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
      	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
 		<link href="includes/css/styles.css" rel="stylesheet"> 
@@ -21,7 +22,7 @@
 
 
 	<body>
-		<div class="container" id="main">
+		<div class="container" id="main">	<!-- main container starts -->
 			<div class="navbar navbar-fixed-top">      <!-- navbar starts -->
 				<div class="container-fluid">
 					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
@@ -34,7 +35,7 @@
 					
 					<div class=" navbar-collapse navbar-responsive-collapse">
 						<ul id="nav" class="nav navbar-nav  pull-left ">
-							<li class="active"><a>Home</a></li>
+							<li><a>Home</a></li>
 							<li><a href="#">Services</a></li>
 							<li><a href="#">About</a></li>
 							<li><a href="#">Blog</a></li>
@@ -95,7 +96,6 @@
       			</div>
 			</div> <!-- end navbar -->
 			
-	
  			<div id="myCarousel" class="carousel slide">        <!-- carousel section starts -->
 
     			<ol class="carousel-indicators">
@@ -109,30 +109,25 @@
       				
       				<div class="item" id="slide1">
         				<div class="carousel-caption">
-							<h4>You Leave Em, We Love Em!</h4>
+							<h2>You Leave Em, We Love Em!</h2>
 						</div><!-- end carousel-caption-->
 					</div>
 
       				<div class="item  active" id="slide2">
    						<div class="carousel-caption">
-							<h4>Owner Away? We’ll Sit and Stay!</h4>
+							<h2>Owner Away? We’ll Sit and Stay!</h2>
 						</div><!-- end carousel-caption-->
-        		
         			</div>
     
       				<div class="item" id="slide3">
         				<div class="carousel-caption">
-							<h4>We Love Them Like You Do!</h4>
-							
+							<h2>We Love Them Like You Do!</h2>	
 						</div><!-- end carousel-caption-->
       				</div>
     			</div>
-
-    	
     			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
       			<span class="icon-prev"></span>
     			</a>
-    	
     			<a class="right carousel-control" href="#myCarousel" data-slide="next">
       			<span class="icon-next"></span>
     			</a>
@@ -142,11 +137,38 @@
     	<div class="row" id="bigCallout">
 			<div class="col-12">
 				<div class="jumbotron">
-    				<h1>Pettycare.com</h1>
+    				<h1>Petcare.com</h1>
     				<p>A home for your pets</p>
   				</div>
 			</div><!-- end col-12 -->
 		</div><!-- end bigCallout --> 
+		
+		<div id="About" class="row">
+			<div class="col-sm-6">
+				<figure class="grid_6"><img src="images/12.jpg"  class="img-circle" alt="A Dog picture"></figure>
+			</div>
+			<div class="col-sm-6">
+				<div class="tabbale">
+					<ul class="nav nav-tabs">
+						<li class="active"><a data-toggle="tab" href="#tab1">About</a></li>
+    					<li><a data-toggle="tab" href="#tab2">More</a></li>
+					</ul>
+					<div class="tab-content">
+    					<div id="tab1" class="tab-pane fade in active">
+      						<h1>About us</h1>
+	 						<p>We provide a full service for every aspect related to your pets. Whether its grooming or a checkup or taking care, we provide the most userfriendly service that too at your home!</p>
+    					</div>
+    					<div id="tab2" class="tab-pane fade">
+    						<h1>More</h1>
+	 						<p>We are afrench based company and have branches across the world. We use professionals and provide high end services along with a guarantee too.We received the best service award from french government in the category of animal welfare and also have been serving 30 percent of the domain since 10 years.</p>
+    
+    					</div>
+					</div>
+	
+				</div>
+			</div>
+	
+		</div>					<!-- About ends here -->
     			
       	<div class="row" id="features">
 			<div class="col-sm-4 feature">
@@ -154,75 +176,74 @@
 					<div class="panel-heading">
 						<h3 class="panel-title">Grooming</h3>
 					</div><!-- end panel-heading -->
-					<img src="images/5.jpg" alt="" class="img-circle">
+					<img src="images/13.jpg" alt="" class="img-circle">
 		
 					<p>We work with trained professionals who are expertised in dealing with all kinds of aspects regarding your pets.</p>
 				</div><!-- end panel -->
 			</div><!-- end feature -->
 	
-		<div class="col-sm-4 feature">
-			<div class="panel">
-				<div class="panel-heading">
-					<h3 class="panel-title">Checkup</h3>
-				</div><!-- end panel-heading -->
-				<img src="images/6.jpg" alt="CSS3" class="img-circle">
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Checkup</h3>
+					</div><!-- end panel-heading -->
+					<img src="images/6.jpg" alt="CSS3" class="img-circle">
 			
-				<p>Considering todays busy lives, our main motto is to provide a door service and keep a regular check on your pet's health.</p>
+					<p>Considering todays busy lives, our main motto is to provide a door service and keep a regular check on your pet's health.</p>
 			
 				
-			</div><!-- end panel -->
-		</div><!-- end feature -->
+				</div><!-- end panel -->
+			</div><!-- end feature -->
 	
-		<div class="col-sm-4 feature">
-			<div class="panel">
-				<div class="panel-heading">
-					<h3 class="panel-title">Babysit</h3>
-				</div><!-- end panel-heading -->
-				<img src="images/7.jpg" alt="Bootstrap 3" class="img-circle">
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Babysit</h3>
+					</div><!-- end panel-heading -->
+					<img src="images/7.jpg" alt="Bootstrap 3" class="img-circle">
 			
-				<p>Whether its a planned holiday or a sudden emergency trip,dont worry about your pets.We can deal with it!</p>
-			
-			</div><!-- end panel -->
-		</div><!-- end feature -->
-	</div><!-- end features -->
+					<p>Whether its a planned holiday or a sudden emergency trip,dont worry about your pets.We can deal with it!</p>
+				</div><!-- end panel -->
+			</div><!-- end feature -->
+		</div><!-- end features -->
    
    	</div>  <!-- main container ends -->
 
    	<footer>
    		<div class="container">
-		<div class="row">
-			<div class="col-sm-3">
-				<h6>Address</h6>
-				<p>Headquarters:</br>795 Folsom Ave, </br>Suite 60,</br>San Francisco, </br>CA 94107</p>
-			</div><!-- end col-sm-4 -->
-			<div class="col-sm-3">
-				<h6>Contact</h6>
-				<p>Phone: (91) 8547 632521 </br>Fax: (91) 11 4752 1433</br>Email: info@canvas.com</p>
-			</div>
-			<div class="col-sm-3">
-				<h6>Navigation</h6>
-				<ul class="unstyled">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Links</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div><!-- end col-sm-2 -->
+			<div class="row">
+				<div class="col-sm-3">
+					<h3>Address</h3>
+					<p>Headquarters:</br>795 Folsom Ave, </br>Suite 60,</br>San Francisco, </br>CA 94107</p>
+				</div><!-- end col-sm-4 -->
+				<div class="col-sm-3">
+					<h3>Contact</h3>
+					<p>Phone: (91) 8547 632521 </br>Fax: (91) 11 4752 1433</br>Email: info@canvas.com</p>
+				</div>
+				<div class="col-sm-3">
+					<h3>Navigation</h3>
+					<ul class="unstyled">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Links</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div><!-- end col-sm-2 -->
 			
-			<div class="col-sm-3">
-				<h6>Follow Us</h6>
-				<ul class="unstyled">
-					<li><a href="#">Instagram</a></li>
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">Google Plus</a></li>
-				</ul>
-			</div><!-- end col-sm-2 -->
+				<div class="col-sm-3">
+					<h3>Follow Us</h3>
+					<ul class="unstyled">
+						<li><a href="#">Instagram <i class="fa fa-instagram" style="font-size:24px; color:#ff0066"></i></a></li>
+						<li><a href="#">Twitter <i class="fa fa-twitter" style="font-size:24px;color: #00ace6"></i></a></li>
+						<li><a href="#">Facebook <i class="fa fa-facebook-official" style="font-size:24px;color: #1a75ff" ></i></a></li>
+						<li><a href="#">GooglePlus <i class="fa fa-google-plus" style="font-size:24px;color:red"></i></a></li>
+					</ul>
+				</div><!-- end col-sm-2 -->
 			
-		</div><!-- end row -->
-	</div><!-- end container -->
-   	</footer>
+			</div><!-- end row -->
+		</div><!-- end container -->
+   	</footer> <!-- footer ends -->
    	<script src="http://code.jquery.com/jquery.js"></script>
 	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
