@@ -8,7 +8,6 @@
 		<meta charset="utf-8"/>
 		<meta name="description" content="Pets care taking centre">
     	<meta name="keywords" content="Pets">
-    	<meta name="author" content="Haripriya">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link href='https://fonts.googleapis.com/css?family=Annie Use Your Telescope' rel='stylesheet'>
      	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -22,43 +21,37 @@
 
 
 	<body>
-		<div class="container" id="main">	<!-- main container starts -->
-			<div class="navbar navbar-fixed-top">      <!-- navbar starts -->
-				<div class="container-fluid">
-					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
-        				<span class="icon-bar"></span>
-        				<span class="icon-bar"></span>
-        				<span class="icon-bar"></span>                        
-                	</button> 
-                	
-                	<a href="#" class="navbar-brand"><img id="logo" src="images/1.jpg" alt="logo"></a>
-					
-					<div class=" navbar-collapse navbar-responsive-collapse">
-						<ul id="nav" class="nav navbar-nav  pull-left ">
-							<li><a>Home</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Contact</a></li> 
-							<li class="nav navbar-nav">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<span class="caret"></span></a>
-								<ul class="dropdown-menu">
-    								<li ><a  href="#" data-toggle="modal" data-target="#myModal1" ><span class="glyphicon glyphicon-log-in" ></span> Login</a></li>
-    								<li ><a  href="#" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-  								</ul>
-							</li>
-							
-						</ul>
-						<form class="navbar-form pull-right">
-							<div class="form-group">
-								<input id="searchInput" type="text" class="form-control" placeholder="search">
-							</div>
-							<button type="submit" class="btn"><span class="glyphicon glyphicon-search"></span></button>
-								
-						</form>	
-					</div>  <!-- end navbar collapse -->   
-				</div> <!-- end container-fluid -->
-				
+		<main class="container">	<!-- main container starts -->
+			<nav class="navbar  navbar-fixed-top">
+    		<div class="container-fluid">
+        		<div class="navbar-header">
+            	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#"><img src="images/1.jpg" alt="logo"></a>  
+            
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a routerLink='/home' routerLinkActive="active">Home</a></li>
+                <li><a routerLink="/chart" routerLinkActive="active">Charts</a></li>
+                <li><a routerLink="/myaccount" routerLinkActive="active">Favourites</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="input-group">
+                    <input #key type="text" class="form-control" placeholder="Search" name="search">
+                    <div class="input-group-btn">
+                        <button (click)="search(key.value)" class="btn btn-default" type="submit">
+                        <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>	
 				<div class="modal fade" id="myModal1" role="dialog"> <!-- modal components -->
     				<div class="modal-dialog">
     					<div class="modal-content">
@@ -94,7 +87,7 @@
       					</div>
       				</div>
       			</div>
-			</div> <!-- end navbar -->
+			
 			
  			<div id="myCarousel" class="carousel slide">        <!-- carousel section starts -->
 
@@ -109,19 +102,19 @@
       				
       				<div class="item" id="slide1">
         				<div class="carousel-caption">
-							<h2>You Leave Em, We Love Em!</h2>
+							<p>You leave em, we love em!</p>
 						</div><!-- end carousel-caption-->
 					</div>
 
       				<div class="item  active" id="slide2">
    						<div class="carousel-caption">
-							<h2>Owner Away? We’ll Sit and Stay!</h2>
+							<p>Owner away? We’ll sit and stay!</p>
 						</div><!-- end carousel-caption-->
         			</div>
     
       				<div class="item" id="slide3">
         				<div class="carousel-caption">
-							<h2>We Love Them Like You Do!</h2>	
+							<p>We love them like you do!</p>	
 						</div><!-- end carousel-caption-->
       				</div>
     			</div>
@@ -207,37 +200,27 @@
 			</div><!-- end feature -->
 		</div><!-- end features -->
    
-   	</div>  <!-- main container ends -->
+   	</main>  <!-- main container ends -->
 
    	<footer>
    		<div class="container">
 			<div class="row">
-				<div class="col-sm-3">
-					<h3>Address</h3>
+				<div class="col-sm-4">
+					<h4>Address</h4>
 					<p>Headquarters:</br>795 Folsom Ave, </br>Suite 60,</br>San Francisco, </br>CA 94107</p>
 				</div><!-- end col-sm-4 -->
-				<div class="col-sm-3">
-					<h3>Contact</h3>
+				<div class="col-sm-4">
+					<h4>Contact</h4>
 					<p>Phone: (91) 8547 632521 </br>Fax: (91) 11 4752 1433</br>Email: info@canvas.com</p>
 				</div>
-				<div class="col-sm-3">
-					<h3>Navigation</h3>
-					<ul class="unstyled">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Links</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</div><!-- end col-sm-2 -->
 			
-				<div class="col-sm-3">
-					<h3>Follow Us</h3>
+				<div class="col-sm-4">
+					<h4>Follow Us</h4>
 					<ul class="unstyled">
-						<li><a href="#">Instagram <i class="fa fa-instagram" style="font-size:24px; color:#ff0066"></i></a></li>
-						<li><a href="#">Twitter <i class="fa fa-twitter" style="font-size:24px;color: #00ace6"></i></a></li>
-						<li><a href="#">Facebook <i class="fa fa-facebook-official" style="font-size:24px;color: #1a75ff" ></i></a></li>
-						<li><a href="#">GooglePlus <i class="fa fa-google-plus" style="font-size:24px;color:red"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram" style="font-size:24px; color:#ff0066"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" style="font-size:24px;color: #00ace6"></i></a></li>
+						<li><a href="#"> <i class="fa fa-facebook-official" style="font-size:24px;color: #1a75ff" ></i></a></li>
+						<li><a href="#"> <i class="fa fa-google-plus" style="font-size:24px;color:red"></i></a></li>
 					</ul>
 				</div><!-- end col-sm-2 -->
 			
